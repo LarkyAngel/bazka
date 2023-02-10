@@ -14,7 +14,7 @@ public class Main {
         try {
             Class.forName("org.postgresql.Driver");
             connection = DriverManager
-                    .getConnection("jdbc:postgresql://localhost/skijumping", username, password);
+                    .getConnection("jdbc:postgresql://lkdb:5432/mrbd", username, password);
         } catch (SQLException e) {
             e.printStackTrace();
             //System.err.println(e.getClass().getName() + ": " + e.getMessage());
